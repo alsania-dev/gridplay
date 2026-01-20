@@ -115,7 +115,7 @@ Tired of messy spreadsheets, cash piles, and manual score-checking for your spor
 
 6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Deployment
+### Deployment (maybe)
 
 You can deploy the app to Vercel with one click:
 
