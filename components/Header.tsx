@@ -6,6 +6,7 @@
  */
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import Button from './Button';
 
 export interface NavItem {
@@ -75,7 +76,8 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 flex-shrink-0">
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo-icon.svg"
               alt="GridPlay"
@@ -84,7 +86,7 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="text-white font-bold text-lg hidden sm:block">
               Grid<span className="text-[#F59E0B]">Play</span>
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
