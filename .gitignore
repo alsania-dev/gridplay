@@ -44,3 +44,6 @@ next-env.d.ts
 # additional
 node_modules/
 dist/
+
+# deprecated files
+.deprecated/
