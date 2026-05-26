@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "@gridplay_supabase_url",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@gridplay_supabase_anon_key",
+    "NEXT_PUBLIC_ALSA_TOKEN_ADDRESS": "0x1630fE468B414A964ed974b9F5Dd69d950E1Eb74",
+    "NEXT_PUBLIC_SPIRIT_TOKEN_ADDRESS": "0xec5E56058494F2cb260Fd7D81B15f04872dbC34a"
+  }
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <defs>
+    <linearGradient id="gridGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00cc6a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Grid Icon -->
+  <g transform="translate(5, 5)">
+    <!-- Outer border -->
+    <rect x="0" y="0" width="40" height="40" rx="4" stroke="url(#gridGradient)" stroke-width="2" fill="none" filter="url(#glow)"/>
+    
+    <!-- Grid lines - vertical -->
+    <line x1="13" y1="0" x2="13" y2="40" stroke="url(#gridGradient)" stroke-width="1" opacity="0.6"/>
+    <line x1="27" y1="0" x2="27" y2="40" stroke="url(#gridGradient)" stroke-width="1" opacity="0.6"/>
+    
+    <!-- Grid lines - horizontal -->
+    <line x1="0" y1="13" x2="40" y2="13" stroke="url(#gridGradient)" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="27" x2="40" y2="27" stroke="url(#gridGradient)" stroke-width="1" opacity="0.6"/>
+    
+    <!-- Highlighted square (winner effect) -->
+    <rect x="14" y="1" width="12" height="12" fill="url(#gridGradient)" opacity="0.3" rx="1"/>
+    <rect x="14" y="14" width="12" height="12" fill="url(#gridGradient)" opacity="0.5" rx="1"/>
+    <rect x="1" y="14" width="12" height="12" fill="url(#gridGradient)" opacity="0.2" rx="1"/>
+    
+    <!-- Center dot -->
+    <circle cx="20" cy="20" r="3" fill="url(#gridGradient)" filter="url(#glow)"/>
+  </g>
+  
+  <!-- Text: GridPlay -->
+  <text x="55" y="33" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="url(#textGradient)">
+    <tspan fill="url(#gridGradient)" filter="url(#glow)">Grid</tspan><tspan fill="url(#textGradient)">Play</tspan>
+  </text>
+  
+  <!-- Accent line under text -->
+  <rect x="55" y="38" width="80" height="2" rx="1" fill="url(#gridGradient)" opacity="0.6"/>
+</svg>
