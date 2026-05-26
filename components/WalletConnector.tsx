@@ -102,8 +102,8 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
         method: 'wallet_switchEthereumChain',
         params: [{ chainId: POLYGON_CHAIN_ID }],
       });
-    } catch (error: any) {
-      if (error.code === 4902) {
+    } catch (error: unknown) {
+      if ((error as { code?: number }).code === 4902) {
         // Network not added, add it
         try {
           await window.ethereum.request({
